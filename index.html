@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar PDF con FPDI</title>
+    <link type="text/css" rel="shortcut icon" href="imgs/logo-mywebsite-urian-viera.svg"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<span class="navbar-brand">
+  <img src="imgs/logo-mywebsite-urian-viera.svg" alt="Web Developer Urian Viera" width="120">
+    Web Developer Urian Viera
+</span>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+<a class="btn btn-primary" href="asignar_variables_al_pdf.php">Asignar</a>
+</nav>
+
+
+
+
+<form method="POST" action="recibe_pdf.php" class="login-form" enctype="multipart/form-data" style="height: 380px !important;">
+    <img class="logo" src="imgs/logo-mywebsite-urian-viera.svg" alt="">
+
+  <div class="file-input text-center">
+      <input  type="file" name="file-input" id="file-input" class="file-input__input" accept=".pdf"/>
+      <label class="file-input__label" for="file-input">
+        <i class="zmdi zmdi-upload zmdi-hc-2x"></i>
+        <span>Elegir Archivo PDF</span></label
+      >
+    </div>
+
+    <div class="input">
+        <i class="zmdi zmdi-file-text"></i>
+        <input type="text" name="name_file" id="name_file" placeholder="Nombre del Archivo" class="username">
+    </div>
+
+    <button class="btn-login" value="Entrar">Subir Archivo</button>
+</form>
+
+
+
+</body>
+</html>
