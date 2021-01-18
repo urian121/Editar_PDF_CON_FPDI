@@ -2,7 +2,6 @@
     include('config.php');
     use setasign\Fpdi\Fpdi;
 
-
     require_once('fpdf181/fpdf.php'); 
     require_once('fpdi2/src/autoload.php'); 
     require_once('mis_variables_pdf.php'); 
@@ -11,7 +10,7 @@
 
     # Pagina 1
     $pdf->AddPage(); 
-    $pdf->setSourceFile('Files_Pdf/prueba.pdf'); 
+    $pdf->setSourceFile('Files_Pdf/18_01_2021.demo1.pdf'); 
     $tplIdx = $pdf->importPage(1); 
     $pdf->useTemplate($tplIdx); 
     $pdf->SetFont('Arial', 'B', '15'); 

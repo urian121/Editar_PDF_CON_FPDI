@@ -15,7 +15,7 @@ $urlFile   = $_FILES["file-input"]["name"]; //Recibiendo el Archivo
 
 
 //Modificando nombre del archivo
-$new_name_file  = $fecha.'.'.$urlFile;
+$new_name_file  = $fecha.'_'.$urlFile;
 
 
 //Guardando archivo en la carperta
