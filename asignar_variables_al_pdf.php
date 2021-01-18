@@ -10,7 +10,7 @@
 
     # Pagina 1
     $pdf->AddPage(); 
-    $pdf->setSourceFile('Files_Pdf/18_01_2021.demo1.pdf'); 
+    $pdf->setSourceFile('Files_Pdf/18_01_2021_demo2.pdf'); 
     $tplIdx = $pdf->importPage(1); 
     $pdf->useTemplate($tplIdx); 
     $pdf->SetFont('Arial', 'B', '15'); 
@@ -20,7 +20,7 @@
 
     $pdf->SetFont('Arial', 'B', '11'); 
     $pdf->SetXY(10,220);
-    $pdf->Write(10,$tecnico1);
+    $pdf->Write(10,$Cargo);
 
     $pdf->SetFont('Arial', 'B', '11'); 
     $pdf->SetXY(100,220);
@@ -79,6 +79,7 @@
     $pdf->SetFont('Arial', 'B', '11'); 
     $pdf->SetXY(80,250);
     $pdf->Write(10,$nombreFirma);
+    $pdf->Image('firmas/one.png', 90, 248, 40, '', 'PNG', '', 'T', false, 300, '', false, false, 0, false, false, false);
 
 
     $pdf->Output('Files_Pdf/VYWQ_15_12_2020.pdf', 'I'); //SALIDA DEL PDF

@@ -1,14 +1,14 @@
 <?php
 include('config.php');
-//$id = $_REQUEST[1];
 
-$id = "1";
+
+$id = "2";
 $sqlVariables = ("SELECT * FROM mis_variables WHERE id='".$id."'");
 $queryVar  = mysqli_query($con, $sqlVariables);
 $MiDataVar = mysqli_fetch_array($queryVar);
 
-$nombreEncargado =  $MiDataVar['nombre']; 
-$Cargo 			 =  $MiDataVar['cargo']; 
+$nombreEncargado =  "Hola.... " .$MiDataVar['nombre']; 
+$Cargo 			 =  "Mi Cargo es: ". $MiDataVar['cargo']; 
 
 
 /* VARIABLES */
